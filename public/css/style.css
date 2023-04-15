@@ -1,0 +1,127 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    height: 400px;
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+}
+.dino{
+    height: 40px;
+    width: 40px;
+}
+
+main .dinoDiv{
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    bottom: 70px;
+    left: 100px;
+}
+.dinoDiv.ground{
+    bottom: 70px;
+}
+.dinoDiv.jump {
+    animation: dinoAnimation 0.7s linear infinite;
+}
+@keyframes dinoAnimation {
+    0%,100%{
+        bottom:70px
+    }
+    45%,55%{
+        bottom: 160px
+    }
+}
+
+#cactus{
+    position: absolute;
+    bottom: 100px;
+    right: -500;
+}
+#cactus2{
+    position:absolute;
+    bottom: 100px;
+    right: -500px;
+}
+.cactus2.cactusAni{
+    animation: cactusAnimation 5s linear infinite;
+}
+#cactus3{
+    position: absolute;
+    bottom: 100px;
+    right: -500px;
+}
+.cactus3.cactusAni{
+    animation: cactusAnimation 4s linear infinite;
+}
+.cactusAni{
+    animation: cactusAnimation 2s linear infinite;
+}
+.cactusImg{
+    height: 50px;
+    width: 50px;
+}
+main .road{
+    height: 55px;
+    width:100vw;
+    position: absolute;
+    bottom: 50px; 
+}
+
+.road.roadAni{
+    animation: roadAnimation 1s linear infinite;
+}
+@keyframes cactusAnimation {
+    0%{
+        right: -100px;
+    }
+    100%{
+        right:100%;
+    }
+}
+
+@keyframes roadAnimation {
+    0%{
+        right: 0px;
+    }
+    100%{
+        right: 500px;
+    }
+}
+@keyframes skyAni{
+    0%{
+        left: -2000px;
+    }
+    100%{
+        left:100%;
+    }
+}
+.sky{
+    position: relative;
+    width: 100vw;
+    animation: skyAni 5s linear infinite;
+    z-index: 20;
+}
+.gameOver{
+    display: none;
+
+}
+.gameOver.true{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 900;
+}
+.score.hide{
+    display: none;
+}

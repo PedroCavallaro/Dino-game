@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Dino-game</title>
+    <link rel="icon" type="image.png" href="../img/dinoicon.png">
+</head>
+<body>
+<main>
+    <div class="lastScore">
+
+    </div>
+    <div class="score">
+        <span class="scoreSpan">Score: </span>
+    </div>
+    <div class="sky">
+        <img src="../img/cloud.jpg">
+    </div>
+    <div class="dinoDiv" id="dinoDiv" data-animation ="dinoAnimation"> 
+        <img class="dino" src="../img/dino2.gif">
+    </div>
+    <div id="cactus" class="cactusAni cactus cactus">
+        <img class="cactusImg" src="../img/cactus.png">
+    </div>
+    <div id="cactus2" class="cactus2 cactusAni cactus">
+        <img class="cactusImg" src="../img/cactus.png">
+    </div>
+    <div id="cactus3" class="cactus3 cactusAni cactus">
+        <img class="cactusImg" src="../img/cactus.png">
+    </div>
+    <div id="road" class="road roadAni">
+        <img src="../img/road.png">
+    </div>
+    <div class="gameOver">
+        <h1>Game over</h1>
+        <p>Press Enter to restart</p>
+        <p id="finalScore"></p>
+     </div>
+</main>
+
+<script src="dist/main.js"></script>
+</body>
+</html>

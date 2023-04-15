@@ -1,0 +1,7 @@
+{
+    "compilerOptions": {
+        "target": "ESNext",
+        "outFile": "public/dist/main.js",
+        "watch": true
+    }
+}
